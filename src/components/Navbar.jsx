@@ -260,51 +260,201 @@ const Navbar = () => {
 
             {/* APPLY */}
 
-            <Link
-              to="/apply"
-              className="
-          group
-          relative
-          hidden
-          h-20
-          w-[150px]
-          shrink-0
-          items-center
-          justify-center
-          overflow-hidden
-          bg-[#173B5F]
-          text-center
-          xl:flex
-        "
-            >
-              <span
-                className="
-            absolute
-            inset-y-0
-            right-0
-            w-0
-            bg-[#C79A45]
-            transition-all
-            duration-500
-            ease-in-out
-            group-hover:w-full
-          "
-              />
+            {/* ================= APPLY ================= */}
 
-              <span
+            <div className="group relative hidden xl:block">
+              {/* APPLY BUTTON */}
+
+              <Link
+                to="/apply"
                 className="
-            relative
-            z-10
-            text-[12px]
-            font-medium
-            uppercase
-            tracking-[0.15em]
-            text-white
-          "
+      relative
+      z-20
+      flex
+      h-20
+      w-[150px]
+      items-center
+      justify-center
+      overflow-hidden
+      bg-[#173B5F]
+      text-center
+    "
               >
-                APPLY NOW
-              </span>
-            </Link>
+                <span className="text-[12px] font-medium uppercase tracking-[0.15em] text-white">
+                  APPLY NOW
+                </span>
+              </Link>
+
+              {/* ================= APPLY PANEL ================= */}
+
+              <div
+                className="
+      invisible
+      absolute
+      right-0
+      top-full
+      z-10
+      w-[380px]
+      translate-x-full
+      bg-white
+      opacity-0
+      shadow-2xl
+      ring-1
+      ring-black/5
+      transition-all
+      duration-500
+      ease-out
+
+      group-hover:visible
+      group-hover:translate-x-0
+      group-hover:opacity-100
+    "
+              >
+                {/* HEADER */}
+
+                <div className="bg-[#173B5F] px-7 py-6">
+                  <p className="text-[10px] font-medium uppercase tracking-[0.25em] text-[#C79A45]">
+                    Start your journey
+                  </p>
+
+                  <h3 className="mt-2 font-[Raleway] text-2xl font-medium text-white">
+                    Study in North Cyprus
+                  </h3>
+
+                  <p className="mt-2 text-sm leading-6 text-white/60">
+                    Take the first step toward your international education.
+                  </p>
+                </div>
+
+                {/* CONTENT */}
+
+                <div className="p-7">
+                  <div className="space-y-5">
+                    {/* STEP 1 */}
+
+                    <div className="flex gap-4">
+                      <div
+                        className="
+              flex
+              h-9
+              w-9
+              shrink-0
+              items-center
+              justify-center
+              bg-[#C79A45]/10
+              text-xs
+              font-semibold
+              text-[#C79A45]
+            "
+                      >
+                        01
+                      </div>
+
+                      <div>
+                        <h4 className="text-sm font-semibold text-[#173B5F]">
+                          Choose your program
+                        </h4>
+
+                        <p className="mt-1 text-xs leading-5 text-gray-500">
+                          Find a university and program that fits your goals.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* STEP 2 */}
+
+                    <div className="flex gap-4">
+                      <div
+                        className="
+              flex
+              h-9
+              w-9
+              shrink-0
+              items-center
+              justify-center
+              bg-[#C79A45]/10
+              text-xs
+              font-semibold
+              text-[#C79A45]
+            "
+                      >
+                        02
+                      </div>
+
+                      <div>
+                        <h4 className="text-sm font-semibold text-[#173B5F]">
+                          Submit your application
+                        </h4>
+
+                        <p className="mt-1 text-xs leading-5 text-gray-500">
+                          We'll guide you through the required documents.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* STEP 3 */}
+
+                    <div className="flex gap-4">
+                      <div
+                        className="
+              flex
+              h-9
+              w-9
+              shrink-0
+              items-center
+              justify-center
+              bg-[#C79A45]/10
+              text-xs
+              font-semibold
+              text-[#C79A45]
+            "
+                      >
+                        03
+                      </div>
+
+                      <div>
+                        <h4 className="text-sm font-semibold text-[#173B5F]">
+                          Begin your journey
+                        </h4>
+
+                        <p className="mt-1 text-xs leading-5 text-gray-500">
+                          Get ready to begin your studies in North Cyprus.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* CTA */}
+
+                  <Link
+                    to="/apply"
+                    className="
+          group/apply
+          mt-7
+          flex
+          w-full
+          items-center
+          justify-between
+          bg-[#C79A45]
+          px-5
+          py-4
+          text-xs
+          font-semibold
+          uppercase
+          tracking-[0.12em]
+          text-white
+          transition
+          hover:bg-[#173B5F]
+        "
+                  >
+                    Start Application
+                    <span className="text-lg transition-transform duration-300 group-hover/apply:translate-x-1">
+                      →
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* MOBILE BUTTON */}
