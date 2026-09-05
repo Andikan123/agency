@@ -1,0 +1,14 @@
+export { default as HomeLayout } from "./HomeLayout";
+export { default as Contact } from "./Contact";
+export { default as Faq } from "./Faq";
+export { default as HowItWorks } from "./HowItWorks";
+export { default as Landing } from "./Landing";
+export { default as ProgramDetail } from "./ProgramDetail";
+export { default as Programs } from "./Programs";
+export { default as StudentStories } from "./StudentStories";
+export { default as StudyInNorthCyprus } from "./StudyInNorthCyprus";
+export { default as Universities } from "./Universities";
+export { default as UniversityDetail } from "./UniversityDetail";
+export { default as About } from "./About";
+export { default as Error } from "./Error";
+export { default as Apply } from "./Apply";
